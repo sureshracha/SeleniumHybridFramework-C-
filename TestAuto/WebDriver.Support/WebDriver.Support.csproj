@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\jcanno10\Source\Repos\efr-automation\ExternalDLLS\WebDriver.Support.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84EEC1DE-218E-4E43-B1DD-D3C32BC0B307}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>WebDriver.Support</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.53.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>OpenQA.Selenium.Support</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="WebDriver">
+      <HintPath>lib\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\EventFiringWebDriver.cs" />
+    <Compile Include="Events\FindElementEventArgs.cs" />
+    <Compile Include="Events\WebDriverExceptionEventArgs.cs" />
+    <Compile Include="Events\WebDriverNavigationEventArgs.cs" />
+    <Compile Include="Events\WebDriverScriptEventArgs.cs" />
+    <Compile Include="Events\WebElementEventArgs.cs" />
+    <Compile Include="Extensions\WebDriverExtensions.cs" />
+    <Compile Include="PageObjects\ByAll.cs" />
+    <Compile Include="PageObjects\ByChained.cs" />
+    <Compile Include="PageObjects\ByFactory.cs" />
+    <Compile Include="PageObjects\ByIdOrName.cs" />
+    <Compile Include="PageObjects\CacheLookupAttribute.cs" />
+    <Compile Include="PageObjects\IElementLocator.cs" />
+    <Compile Include="PageObjects\DefaultElementLocator.cs" />
+    <Compile Include="PageObjects\IPageObjectMemberDecorator.cs" />
+    <Compile Include="PageObjects\DefaultPageObjectMemberDecorator.cs" />
+    <Compile Include="PageObjects\FindsByAllAttribute.cs" />
+    <Compile Include="PageObjects\FindsByAttribute.cs" />
+    <Compile Include="PageObjects\FindsBySequenceAttribute.cs" />
+    <Compile Include="PageObjects\How.cs" />
+    <Compile Include="PageObjects\PageFactory.cs" />
+    <Compile Include="PageObjects\RetryingElementLocator.cs" />
+    <Compile Include="PageObjects\WebDriverObjectProxy.cs" />
+    <Compile Include="PageObjects\WebElementListProxy.cs" />
+    <Compile Include="PageObjects\WebElementProxy.cs" />
+    <Compile Include="UI\IWait`1.cs" />
+    <Compile Include="UI\DefaultWait`1.cs" />
+    <Compile Include="UI\ExpectedConditions.cs" />
+    <Compile Include="UI\IClock.cs" />
+    <Compile Include="UI\ILoadableComponent.cs" />
+    <Compile Include="UI\LoadableComponentException.cs" />
+    <Compile Include="UI\LoadableComponent`1.cs" />
+    <Compile Include="UI\PopupWindowFinder.cs" />
+    <Compile Include="UI\SelectElement.cs" />
+    <Compile Include="UI\SlowLoadableComponent`1.cs" />
+    <Compile Include="UI\SystemClock.cs" />
+    <Compile Include="UI\UnexpectedTagNameException.cs" />
+    <Compile Include="UI\WebDriverWait.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,3028 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebDriverImp</name>
+    </assembly>
+    <members>
+        <member name="T:TestAutomation.DataManipulations.Encryptor">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.DataManipulations.Encryptor.Encrypter(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TestAutomation.DataLayer.DataDriver.DataDriver">
+            <summary>
+            Data Driver to read the data from xl and db
+            </summary>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.GetColumnValue(System.String,System.Int32)">
+            <summary>
+            getting the Column value after executing the DB or XL Queuries
+            </summary>
+            <param name="ColumnName"></param>
+            <param name="Row"></param>
+            <returns></returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.IsDataReadSuccess">
+            <summary>
+            Whether the Data reading from DB or XL is successfully or not
+            </summary>
+            <returns>true/false</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.GetRowsCount">
+            <summary>
+            get the row count of result datatble
+            </summary>
+            <returns></returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.ReadDataFromXl(System.String,System.String,System.String)">
+            <summary>
+            Reading the data from XL and stores in the DAtatable
+            </summary>
+            <param name="FilePath"></param>
+            <param name="SheetName"></param>
+            <param name="FetchQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.ReadDataFromXl_AsDataTable(System.String,System.String,System.String)">
+            <summary>
+            REading the data from xl file and returns the datatable
+            </summary>
+            <param name="FilePath"></param>
+            <param name="SheetName"></param>
+            <param name="FetchQuery"></param>
+            <returns>datatable</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.ReadDataFromDb(System.String)">
+            <summary>
+            Read the data from db 
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.ReadDataFromDb(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            read the data from db with db and user datails
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.ReadDataFromDb_AsDataTable(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Read the data from db and returns as DAtatable with db and user login details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <returns>datatable</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.ReadDataFromDb_AsDataTable(System.String)">
+            <summary>
+             Read the data from db and returns as DAtatable
+            </summary>
+            <param name="sQuery"></param>
+            <returns>datatable</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.UpdateDbTable(System.String)">
+            <summary>
+            updating the db table
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.DeleteDbTableRowOrRows(System.String)">
+            <summary>
+            deleting the row from db table
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.InserRowInDb(System.String)">
+            <summary>
+            insert a row in db table
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.UpdateDbTable(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            update the db table with db table and user login details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.DeleteDbTableRowOrRows(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Delete db table row with db and login details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataDriver.DataDriver.InserRowInDb(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            insert a row in db table with db details and user details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="T:TestAutomation.DataLayer.DataReaders.DbDataReader">
+            <summary>
+            DB Data Reader
+            </summary>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.SetDbDetails(System.String,System.String,System.String,System.String)">
+            <summary>
+            Setting the DB connection details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.SetDbDetails">
+            <summary>
+            setting db connection detsils from app config
+            </summary>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.ExecuteSelectQuery(System.String)">
+            <summary>
+            Executing the Select query
+            </summary>
+            <param name="sQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.RunQuery(System.String,System.String)">
+            <summary>
+            Running all the queries..
+            </summary>
+            <param name="sQuery"></param>
+            <param name="isInsDelUpd"></param>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.ExecuteInserOrUpdateOrDeleteQuery(System.String)">
+            <summary>
+            Execute Insert of Update or Delete a DB Query
+            </summary>
+            <param name="sQuery"></param>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.ExecuteSelectQuery(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Executing the Select query with db details and user details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.DataLayer.DataReaders.DbDataReader.ExecuteInserOrUpdateOrDeleteQuery(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Executing the Select query with db details and user details with db details and user details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+        </member>
+        <member name="T:TestAutomation.DataLayer.DataReaders.Excel">
+            <summary>
+                To cater the needs of maintening test data in excel and reading back 
+                that data using common methods.
+            </summary>
+        </member>
+        <member name="T:TestAutomation.DataLayer.Interfaces.IDataDriver">
+            Utility to read Excel files. This file makes use of apache poi for reading
+            excel files. It supports both "xls" and "xlsx" file extension.
+            
+            @author sracha
+            
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.GetColumnValue(System.String,System.Int32)">
+            <summary>
+            this is used to get the DataTable column value after getting the data to the datatable
+            </summary>
+            <param name="ColumnName"></param>
+            <param name="Row"></param>
+            <author>Suresh Racha</author>
+            <returns>string value</returns>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.GetRowsCount">
+            <summary>
+            this is used to get the total rows count after execution of a query(DB or Excel)
+            </summary>
+            <author>Suresh Racha</author>
+            <returns>Row Count as int</returns>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.ReadDataFromXl(System.String,System.String,System.String)">
+            <summary>
+            this is used to Read the data from XL file and stores in the DataTable
+            </summary>
+            <param name="FilePath"></param>
+            <param name="SheetName"></param>
+            <param name="FetchQuery"></param>
+            <author>Suresh Racha </author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.ReadDataFromXl_AsDataTable(System.String,System.String,System.String)">
+            <summary>
+            this is used to Read the data from XL file and returns the DataTable
+            </summary>
+            <param name="FilePath"></param>
+            <param name="SheetName"></param>
+            <param name="FetchQuery"></param>
+            <returns>DataTable</returns>
+            <author>Suresh Racha </author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.ReadDataFromDb(System.String)">
+            <summary>
+            Read the data from db 
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.ReadDataFromDb(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            read the data from db with db and user datails
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.ReadDataFromDb_AsDataTable(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Read the data from db and returns as DAtatable with db and user login details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <returns>datatable</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.ReadDataFromDb_AsDataTable(System.String)">
+            <summary>
+             Read the data from db and returns as DAtatable
+            </summary>
+            <param name="sQuery"></param>
+            <returns>datatable</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.UpdateDbTable(System.String)">
+            <summary>
+            updating the db table
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.DeleteDbTableRowOrRows(System.String)">
+            <summary>
+            deleting the row from db table
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.InserRowInDb(System.String)">
+            <summary>
+            insert a row in db table
+            </summary>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.UpdateDbTable(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            update the db table with db table and user login details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.DeleteDbTableRowOrRows(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Delete db table row with db and login details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.InserRowInDb(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            insert a row in db table with db details and user details
+            </summary>
+            <param name="ServerName"></param>
+            <param name="DatabaseName"></param>
+            <param name="UserId"></param>
+            <param name="Password"></param>
+            <param name="sQuery"></param>
+            <author>suresh racha</author>
+        </member>
+        <member name="M:TestAutomation.DataLayer.Interfaces.IDataDriver.IsDataReadSuccess">
+            <summary>
+            Whether the Data reading from DB or XL is successfully or not
+            </summary>
+            <returns>true/false</returns>
+            <author>suresh racha</author>
+        </member>
+        <member name="T:TestAutomation.DataLayer.Interfaces.IdbDataReader">
+            <summary>
+            DB Reading , select,insert, update and delete basic operations
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebButton">
+            <summary>
+            IWebButton intereface which is common to all tools implementation for WebButton
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.Click">
+            <summary>
+            click method which clicks on the button
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the button is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the button is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetX">
+            <summary>
+            get the X position value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetY">
+            <summary>
+            get the Y position value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetWidth">
+            <summary>
+            get the Width of the button 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetHeight">
+            <summary>
+            get the Hight of the button
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebButton.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebCheckBox">
+            <summary>
+            IWebCheckBox intereface which is common to all tools implementation for WebCheckBox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the textbox is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the textbox is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetX">
+            <summary>
+            get the X position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetY">
+            <summary>
+            get the Y position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetWidth">
+            <summary>
+            get the Width of the TExtbox 
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetHeight">
+            <summary>
+            get the Hight of the Textbox
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.Select">
+            <summary>
+            Select the checkbox
+            </summary> 
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.UnSelect">
+            <summary>
+            unselect the selected checkbox
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.IsChecked">
+            <summary>
+            get the boolen value (true/false) whether the checkbox is checked or unchecked (checked => true, unchecked => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebCheckBox.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IElement">
+            <summary>
+            WebComponent's IElement Interface which gives basic operations on Element
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.Click">
+            <summary>
+            click method which clicks on the element
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the element is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the element is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetX">
+            <summary>
+            get the X position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetY">
+            <summary>
+            get the Y position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetWidth">
+            <summary>
+            get the Width of the element 
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.GetHeight">
+            <summary>
+            get the Hight of the element
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IElement.Doubleclick">
+            <summary>
+            double click on the element
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebImage">
+            <summary>
+            WebComponent's IWebImage Interface which gives basic operations on Image
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.Click">
+            <summary>
+            click method which clicks on the ImageObj
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetCssValue(System.String)">
+            <summary>
+            Get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the ImageObj is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the ImageObj is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetWidth">
+            <summary>
+            Get the Width of the ImageObj 
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebImage.GetHeight">
+            <summary>
+            Get the Hight of the ImageObj
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebLink">
+            <summary>
+            WebComponent's IWebLink Interface which gives basic operations on Link
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.Click">
+            <summary>
+            click method which clicks on the Link
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetCssValue(System.String)">
+            <summary>
+            Get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the Link is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the Link is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetWidth">
+            <summary>
+            Get the Width of the Link 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebLink.GetHeight">
+            <summary>
+            Get the Hight of the Link
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebListBox">
+            <summary>
+            WebComponent's IWebListBox Interface which gives basic operations on weblistbox
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.Click">
+            <summary>
+            click method which clicks on the ListBox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the ListBox is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the ListBox is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetWidth">
+            <summary>
+            Get the Width of the ListBox 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetHeight">
+            <summary>
+            Get the Hight of the ListBox
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetAllItemsValues">
+            <summary>
+             To Get all the Items of a listbox as a string, separated by ; (semicolon)
+            </summary>
+            <returns></returns>   
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.SelectItemByValue(System.String)">
+            <summary>
+            Select an Item by value from the listbox
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.SelectItemByText(System.String)">
+            <summary>
+            Select an Item by text from the list box
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.SelectItemByIndex(System.Int32)">
+            <summary>
+            select an item by index from the listbox
+            </summary>
+            <param name="ilndex"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.DeSelectItemByValue(System.String)">
+            <summary>
+            deSelect an Item by value from the listbox
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.DeSelectItemByIndex(System.Int32)">
+            <summary>
+            deSelect an Item by text from the list box
+            </summary>
+            <param name="ilndex"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.DeSelectAllItems">
+            <summary>
+            deselect the items  from the listbox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetCssValue(System.String)">
+            <summary>
+            Get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.ListItemsCount">
+            <summary>
+            List Items Count
+            </summary>
+            <returns>cout</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.SelectAllElements">
+            <summary>
+            Select all items of listbox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetSelectedElement">
+            <summary>
+            Get the selected element for combobox
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebListBox.GetListItemsAsArray">
+            <summary>
+            get all list Items as array
+            </summary>
+            <returns>string array</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetPropertyValue(System.String,TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <param name="Itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the Radiobuttongroup is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the Radiobuttongroup is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+             <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetX(System.String)">
+            <summary>
+            get the X position value
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetY(System.String)">
+            <summary>
+            get the Y position value
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetWidth(System.String)">
+            <summary>
+            get the Width of the Radiobuttongroup 
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetHeight(System.String)">
+            <summary>
+            get the Hight of the Radiobuttongroup
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.Select(System.String)">
+            <summary>
+            Select the Radio button by giving the value
+            </summary> 
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.IsSelect(System.String)">
+            <summary>
+            get the boolen value (true/false) whether the Radiobuttongroup specified item is selected or not (selected => true, not selected => false)
+            </summary> 
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebRadioGroup.GetRadioButtonsCount">
+            <summary>
+            To get no.of radio buttons within the group
+            </summary>
+            <returns>integer</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebTable">
+            <summary>
+            WebComponent's IWebTable Interface which gives basic operations on DAtaGrid (Table)
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.Click">
+            <summary>
+            click method which clicks on the table
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the table is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the table is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetWidth">
+            <summary>
+            Get the Width of the table 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetHeight">
+            <summary>
+            Get the Hight of the table
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetCellData(System.Int32,System.Int32)">
+            <summary>
+            Get the cell data of the table ex: tablename.GetCellData(2,3);
+            </summary>
+            <param name="Row"></param>
+            <param name="Column"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetRowWithCellText(System.String,System.Int32,System.Int32)">
+            <summary>
+             Get row number with the cell text of the table ex: tablename.GetRowWithCellText(2,3);
+            </summary>
+            <param name="Text"></param>
+            <param name="Column"></param>
+            <param name="StartFromRow"></param>
+            <author>Suresh Racha</author>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetCssValue(System.String)">
+            <summary>
+            Get Css value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>Css value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetRowCount">
+            <summary>
+            Geting the table row count
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.SelectRow(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Select a row  ex: tableobj.SelectRow(1,3,0); OR tableobj.SelectRow(1); 
+            </summary>
+            <param name="rownum"></param>
+            <param name="ColNum"></param>
+            <param name="index"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetColumnCount(System.Int32)">
+            <summary>
+            Getting Table Column count, parameter row number is optional
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetColumnNames(System.Int32)">
+            <summary>
+            Getting Table Column names
+            </summary>
+            <param name="row"></param>
+            <returns></returns>    
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.GetColumnNumber(System.String,System.Int32,System.Int32)">
+            <summary>
+            Getting a column number of a table . Ex: 
+            </summary>
+            <param name="ColumnName"></param>
+            <param name="Row"></param>
+            <param name="StartCol"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.DoubleClickRow(System.Int32,System.Int32)">
+            <summary>
+            double click on a table row
+            </summary>
+            <param name="rownum"></param>
+            <param name="ColNum"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTable.RightClickOnRow(System.Int32)">
+            <summary>
+            Right click on a table row
+            </summary>
+            <param name="rownum"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.Interfaces.IWebTextBox">
+            <summary>
+            WebComponent's IWebTextBox Interface which gives basic operations on textbox/editarea/editbox
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.Click">
+            <summary>
+            click method which clicks on the element
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetCssValue(System.String)">
+            <summary>
+            Get Css value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>Css value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the textbox is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the textbox is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetWidth">
+            <summary>
+            Get the Width of the element 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.GetHeight">
+            <summary>
+            Get the Hight of the element
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.SetValue(System.String)">
+            <summary>
+            Set a value to the textbox
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.TypeValue(System.String)">
+            <summary>
+            Type a value in the textbox ( adding to the extisting value)
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.Clear">
+            <summary>
+            clearing the existing content of the textbox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.SetAmountValue(System.String)">
+            <summary>
+            Set a value to the textbox which is of amount type
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebComponents.Interfaces.IWebTextBox.SetPassword(System.String)">
+            <summary>
+            Set the encripted password
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.ObjectProperties.GetBy">
+            <summary>
+            Generalise get feature to get the elements(Objects) property value
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebComponents.ObjectProperties.FindBy">
+            <summary>
+            Generalise find feature to locate the elements(Objects)
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.ObjectLocators.ObjectLocator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TestAutomation.ObjectLocators.ObjectLocator.#ctor(System.Collections.Hashtable)">
+            <summary>
+            
+            </summary>
+            <param name="identifiersTable"></param>
+        </member>
+        <member name="M:TestAutomation.ObjectLocators.ObjectLocator.GetIdentifier(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.ObjectLocators.ObjectLocator.SetIdentifier(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:TestAutomation.Locators.Interfaces.ItestDataReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TestAutomation.Locators.Interfaces.ItestDataReader.GetDataAsString(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.Locators.Interfaces.ItestDataReader.GetDataAsString(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <param name="rowName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.Locators.Interfaces.ItestDataReader.GetDataAsList(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TestAutomation.AutoIT.KeyboardMouse.KeyBoardKeys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TestAutomation.AutoIT.KeyboardMouse.Mouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:TestAutomation.AutoIT.KeyboardOperations.KeyBoard">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TestAutomation.AutoIT.KeyboardOperations.KeyBoard.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="WindowLocatorString"></param>
+        </member>
+        <member name="M:TestAutomation.AutoIT.KeyboardOperations.KeyBoard.SendKey(TestAutomation.AutoIT.KeyboardMouse.KeyBoardKeys)">
+            <summary>
+            
+            </summary>
+            <param name="kkyes"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.#ctor">
+            <summary>
+            MultiBrowser for parallel execution
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.GetBrowser">
+            <summary>
+             To get the current selinium dirver
+            </summary>
+            <returns>current IWebdriver </returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.Navigate(System.String)">
+            <summary>
+            Navigate to given url
+            </summary>
+            <param name="url"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.Navigate">
+            <summary>
+            Navigate to default (defined in app.config  , param is 'AppURL')
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.Navigate(System.String,System.String)">
+            <summary>
+            Navigate to url with browser type (ie,firefox and chrome)
+            </summary>
+            <param name="url"></param>
+            <param name="browsertype"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.CloseBrowser">
+            <summary>
+            Close the current webdriver
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.SwitchWindow(System.String)">
+            <summary>
+            Switch to windiow using title
+            </summary>
+            <param name="Windowtitle"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.SwitchToParentWindow">
+            <summary>
+            switch back to parent windnow
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.GetURL">
+            <summary>
+             To get the url of the browser
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.Getparenthandle">
+            <summary>
+            To get the Parent handle
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.GetTitle">
+            <summary>
+            To get the tiltle of the browser
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.IsExists">
+            <summary>
+            verify the browser is existed or not
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.SetDriver">
+            <summary>
+            Set the dirver
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.OpenURL(System.String,System.String)">
+            <summary>
+            To open the url
+            </summary>
+            <param name="url"></param>
+            <param name="browsertype"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.MultiBrowser.Refresh">
+            <summary>
+            REfresh the current dirver
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.GetBrowser">
+            <summary>
+            Returns the browser
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.Navigate(System.String)">
+            <summary>
+            Navigate to specific url provided
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.Navigate">
+            <summary>
+            Navigate to the defalt url which is defined in the app.config (param is 'AppURL')
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.Navigate(System.String,System.String)">
+            <summary>
+            Nagiigate to the url in specified browser like ie,firefox or chrome
+            </summary>
+            <param name="url"></param>
+            <param name="browsertype"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.CloseBrowser">
+            <summary>
+            to close the browser
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.SwitchWindow(System.String)">
+            <summary>
+            Switch to window
+            </summary>
+            <param name="Windowtitle"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.SwitchToParentWindow">
+            <summary>
+            Switch back to parent window
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.GetURL">
+            <summary>
+            to get the url from the browser
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.Getparenthandle">
+            <summary>
+            Get the parent handle
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.GetTitle">
+            <summary>
+            To get the title of the current window
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.IsExists">
+            <summary>
+            verify the existence of browser
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.SetDriver">
+            <summary>
+            Set the driver
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.OpenURL(System.String,System.String)">
+            <summary>
+            Open the url
+            </summary>
+            <param name="url"></param>
+            <param name="browsertype"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Browser.Refresh">
+            <summary>
+            REfresh the current dirver
+            </summary>
+        </member>
+        <member name="T:TestAutomation.WebDriver.WebComponents.WebButton">
+            <summary>
+            IWebButton intereface which is common to all tools implementation for WebButton
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.#ctor(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+            Constructor takes object loctor as param
+            </summary>
+            <param name="Locator"></param>
+             <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.#ctor(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.Click">
+            <summary>
+            click method which clicks on the button
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the button is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the button is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetWidth">
+            <summary>
+            Get the Width of the element 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetHeight">
+            <summary>
+            Get the Hight of the element
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebButton.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.#ctor(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the textbox is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the textbox is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetX">
+            <summary>
+            get the X position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetY">
+            <summary>
+            get the Y position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetWidth">
+            <summary>
+            get the Width of the TExtbox 
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.GetHeight">
+            <summary>
+            get the Hight of the Textbox
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.Select">
+            <summary>
+            Select the checkbox
+            </summary> 
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.UnSelect">
+            <summary>
+            unselect the selected checkbox
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebCheckBox.IsChecked">
+            <summary>
+            get the boolen value (true/false) whether the checkbox is checked or unchecked (checked => true, unchecked => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetCssValue(System.String)">
+            <summary>
+            Get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.Click">
+            <summary>
+            click method which clicks on the ImageObj
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the ImageObj is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the ImageObj is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetWidth">
+            <summary>
+            Get the Width of the ImageObj 
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.GetHeight">
+            <summary>
+            Get the Hight of the ImageObj
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebImage.Doubleclick">
+            <summary>
+            Dobuble click on the image
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebDriver.WebComponents.Element">
+            <summary>
+            WebComponent's IElement Interface which gives basic operations on  Element
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.#ctor(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor with parameters as findby and value
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.#ctor(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+            Constructor takes IObjectLocator as parameter
+            </summary>
+            <param name="Locator"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.Click">
+            <summary>
+            click method which clicks on the element
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the element is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the button is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetX">
+            <summary>
+            get the X position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetY">
+            <summary>
+            get the Y position value
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetWidth">
+            <summary>
+            get the Width of the element 
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.GetHeight">
+            <summary>
+            get the Hight of the element
+            </summary>
+            <returns></returns>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.Element.Doubleclick">
+            <summary>
+            double click on the element
+            </summary>
+            <author> Suresh Racha</author>
+        </member>
+        <member name="T:TestAutomation.WebDriver.WebComponents.WebLink">
+            <summary>
+            WebComponent's IWebLink Interface which gives basic operations on Link
+            Author : Suresh Racha
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetCssValue(System.String)">
+            <summary>
+            Get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.#ctor(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as params
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.#ctor(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+            Constructor takes locator as param
+            </summary>
+            <param name="Locator"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.Click">
+            <summary>
+            click method which clicks on the Link
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param>prp</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the Link is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the Link is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetWidth">
+            <summary>
+            Get the Width of the Link 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebLink.GetHeight">
+            <summary>
+            Get the Hight of the Link
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.Click">
+            <summary>
+            click method which clicks on the ListBox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetCssValue(System.String)">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the ListBox is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the button is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetAllItemsValues">
+            <summary>
+             To Get all the Items of a listbox as a string, separated by ; (semicolon)
+            </summary>
+            <returns></returns>   
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetListItemsAsArray">
+            <summary>
+            get all list Items as array
+            </summary>
+            <returns>string array</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.SelectAllElements">
+            <summary>
+            Select all items of listbox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.SelectItemByValue(System.String)">
+            <summary>
+            Select an Item by value from the listbox
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.SelectItemByText(System.String)">
+            <summary>
+            Select an Item by text from the list box
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.SelectItemByIndex(System.Int32)">
+            <summary>
+            select an item by index from the listbox
+            </summary>
+            <param name="ilndex"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.DeSelectItemByValue(System.String)">
+            <summary>
+            deSelect an Item by value from the listbox
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.DeSelectItemByIndex(System.Int32)">
+            <summary>
+            deSelect an Item by text from the list box
+            </summary>
+            <param name="ilndex"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.DeSelectAllItems">
+            <summary>
+            deselect the items  from the listbox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetWidth">
+            <summary>
+            Get the Width of the ListBox 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetHeight">
+            <summary>
+            Get the Hight of the ListBox
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.ListItemsCount">
+            <summary>
+            List Items Count
+            </summary>
+            <returns>cout</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebListBox.GetSelectedElement">
+            <summary>
+            Get the selected element for combobox
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetCssValue(System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetLocator">
+            <summary>
+            getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetPropertyValue(System.String,TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <param name="Itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetRadioButtonsCount">
+            <summary>
+            To get no.of radio buttons within the group
+            </summary>
+            <returns>integer</returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.IsEnabled">
+            <summary>
+            get the boolean value (true/false) whether the Radiobuttongroup is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.IsExist">
+            <summary>
+            get the boolen value (true/false) whether the Radiobuttongroup is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+             <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.Select(System.String)">
+            <summary>
+            Select the Radio button by giving the value
+            </summary> 
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.IsSelect(System.String)">
+            <summary>
+            get the boolen value (true/false) whether the Radiobuttongroup specified item is selected or not (selected => true, not selected => false)
+            </summary> 
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetX(System.String)">
+            <summary>
+            get the X position value
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetY(System.String)">
+            <summary>
+            get the Y position value
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetWidth(System.String)">
+            <summary>
+            get the Width of the Radiobuttongroup 
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetHeight(System.String)">
+            <summary>
+            get the Hight of the Radiobuttongroup
+            </summary>
+            <param name="itemname"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebRadioGroup.GetCssStyle(System.String,System.String)">
+            <summary>
+            get CSS value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>CSS value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetCssValue(System.String)">
+            <summary>
+            Get Css value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>Css value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.Click">
+            <summary>
+            click method which clicks on the table
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the table is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the table is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetCellData(System.Int32,System.Int32)">
+            <summary>
+            Get the cell data of the table ex: tablename.GetCellData(2,3);
+            </summary>
+            <param name="Row"></param>
+            <param name="Column"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetRowWithCellText(System.String,System.Int32,System.Int32)">
+            <summary>
+             Get row number with the cell text of the table ex: tablename.GetRowWithCellText(2,3);
+            </summary>
+            <param name="Text"></param>
+            <param name="Column"></param>
+            <param name="StartFromRow"></param>
+            <author>Suresh Racha</author>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetRowCount">
+            <summary>
+            Geting the table row count
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.SelectRow(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Select a row  ex: tableobj.SelectRow(1,3,0); OR tableobj.SelectRow(1); 
+            </summary>
+            <param name="rownum"></param>
+            <param name="ColNum"></param>
+            <param name="index"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetColumnCount(System.Int32)">
+            <summary>
+            Getting Table Column count, parameter row number is optional
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetColumnNames(System.Int32)">
+            <summary>
+            Getting Table Column names
+            </summary>
+            <param name="row"></param>
+            <returns></returns>    
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetColumnNumber(System.String,System.Int32,System.Int32)">
+            <summary>
+            Getting a column number of a table . Ex: 
+            </summary>
+            <param name="ColumnName"></param>
+            <param name="Row"></param>
+            <param name="StartCol"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.DoubleClickRow(System.Int32,System.Int32)">
+            <summary>
+            double click on a table row
+            </summary>
+            <param name="rownum"></param>
+            <param name="ColNum"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.RightClickOnRow(System.Int32)">
+            <summary>
+            Right click on a table row
+            </summary>
+            <param name="rownum"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetWidth">
+            <summary>
+            Get the Width of the table 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTable.GetHeight">
+            <summary>
+            Get the Hight of the table
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetPropertyValue(System.String)">
+            <summary>
+            getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="prp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.#ctor(TestAutomation.WebDriver.WebComponents.MultiBrowser,TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Constructor takes findby and value as param
+            </summary>
+             <param name="browser"></param>
+            <param name="type"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetCssValue(System.String)">
+            <summary>
+            Get Css value from the button
+            </summary>
+            <param name="prp"></param>
+            <returns>Css value as string</returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.SetLocatorValues(TestAutomation.WebComponents.ObjectProperties.FindBy,System.String)">
+            <summary>
+            Set the locator values example ObjectName.SetLocatorValues("id","txtUserName");
+            </summary>
+            <param name="type"></param>
+            <param name="value"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetPropertyValue(TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+            Getting property vlaues like text,value,tagname and so on...
+            </summary>
+            <param name="objprp"></param>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.Click">
+            <summary>
+            click method which clicks on the element
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetLocator">
+            <summary>
+            Getting the Locator as return value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.IsEnabled">
+            <summary>
+            Get the boolean value (true/false) whether the textbox is enabled or displayed (Enabled => true, disabled => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.IsExist">
+            <summary>
+            Get the boolen value (true/false) whether the textbox is enabled or displayed (existed => true, not existed => false)
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetX">
+            <summary>
+            Get the X position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetY">
+            <summary>
+            Get the Y position value
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetWidth">
+            <summary>
+            Get the Width of the element 
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.GetHeight">
+            <summary>
+            Get the Hight of the element
+            </summary>
+            <returns></returns>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.SetValue(System.String)">
+            <summary>
+            Set a value to the textbox
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.TypeValue(System.String)">
+            <summary>
+            Type a value in the textbox ( adding to the extisting value)
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.Clear">
+            <summary>
+            clearing the existing content of the textbox
+            </summary>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.SetPassword(System.String)">
+            <summary>
+            SEt the encripted password to the the textbox
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebComponents.WebTextBox.SetAmountValue(System.String)">
+            <summary>
+            Set a value to the textbox which is of amount type
+            </summary>
+            <param name="val"></param>
+            <author>Suresh Racha</author>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetElement(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+                This is the core method to identify the element on the web page/DOM and returns the IWebElement associated with that DOM element.
+                Using this element you can perform any action you want.
+            </summary>
+            
+            <param name="locator"></param>
+            <returns> IWebElement </returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetElements(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+                Using this method we can find out all the elements on the web page having the identifiers defined in the IObjectLocator 
+                Example : If you want to find out all the web elements on the web page having class='required' we can use this method 
+                which will return the list of all Web Elements with class='required'
+            </summary>
+            <param name="locator"></param>
+            <returns>IList IWebElement</returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetElementText(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+                This method will return the inner text for the specified web element 
+            </summary>
+            <param name="locator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetCurrentPageTitle">
+            <summary>
+                This method will return the current page title. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetCurrentPageURL">
+            <summary>
+                This method will return the Current page URL.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.ExecuteJavaScript(System.String)">
+            <summary>
+                This method can execute the Java Script code 
+            </summary>
+            <param name="jsScript"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SwitchToFrame(System.String)">
+            <summary>
+                Switch the foucs to the Frame identified by it's name
+            </summary>
+            <param name="FrameName"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SwitchToWindow(System.Int32)">
+            <summary>
+                Switch the focus to the browser window with it's index.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SwitchToDefaultWindow">
+            <summary>
+                switch the focus to the default browser window.
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SetCustomImplicitWait(System.Int32)">
+            <summary>
+                Modify the default implicit wait time.
+            </summary>
+            <param name="seconds"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SetMaxTimeOut(System.Int32)">
+            <summary>
+                set max timeout
+            </summary>
+            <param name="seconds"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SetDefaultImplicitWait">
+            <summary>
+                Revert the implicit wait time to it's default value
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.CloseBrowser">
+            <summary>
+                Close the current browser window.
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.CloseAllBrowsers">
+            <summary>
+                Close all the browser windows.
+            </summary>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.FindChildElementText(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+                Accepts parent element and returns list of strings consisting of text value of childrens
+            </summary>
+            <param name="locator"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetCheckboxEnabledProperty(TestAutomation.ObjectLocators.IObjectLocator)">
+            <summary>
+                Accepts parent element locator and returns Hashtablel having key as visible text of checkbox and its isEnabled property
+            </summary>
+            <param name="locator"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.SelectItemFromDropdown(TestAutomation.ObjectLocators.IObjectLocator,System.String)">
+            <summary>
+                Select a item from the drop down for the element specified in the locator object.
+            </summary>
+            <param name="locator"></param>
+            <param name="testData"></param>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetCssValue(TestAutomation.ObjectLocators.IObjectLocator,System.String)">
+            <summary>
+                This method will return the CSS value value of the specified Web element.
+            </summary>
+            <param name="locator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetElementPropertyValue(TestAutomation.ObjectLocators.IObjectLocator,System.String)">
+            <summary>
+                This method will return the attribute value of the specified Web element.
+            </summary>
+            <param name="locator"></param>
+            <param name="prp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.Implementation.WebdriverImp.GetElementPropertyValue(TestAutomation.ObjectLocators.IObjectLocator,TestAutomation.WebComponents.ObjectProperties.GetBy)">
+            <summary>
+                This method will return the attribute value of the specified Web element.
+            </summary>
+            <param name="locator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebWinComponents.WebWinDialog.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebWinComponents.WebWinDialog.BtnClickNo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebWinComponents.WebWinDialog.BtnClickYes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestAutomation.WebDriver.WebWinComponents.WebWinDialog.BtnClickCancel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:excel.application.IExcel">
+            <summary>
+            Basic reading operations on Excel as DB and storing in Data row and data as sting 
+            Author : Bulusu
+            </summary>
+        </member>
+        <member name="M:excel.application.IExcel.OpenExcelConnection">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:excel.application.IExcel.CloseExcelConnection">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:excel.application.IExcel.GetQueriedRows(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:excel.application.IExcel.GetQueriedRow(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:excel.application.IExcel.GetCellDataAsString(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:excel.application.IExcel.GetSheetAsTable(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:excel.application.IExcel.Idisposable">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
